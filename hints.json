@@ -2,5 +2,7 @@
     "We are trying to make the reward high when the water level is high, and lower when it gets further away from that. The water level should be 0.5. So for example, when the water level, the reward should be the highest, when the water level is 0, the reward should be low and the same for a water level of 1. In this example, we can turn this around: we use a penalty when the water level goes away from 0.5. So if the water level raises to 1, there should be a high penalty. If we substract the penalty, we have a negative reward. If the penalty is 0 (for the case of a water level of 0.5) the reward is 0, but this is a higher reward then a negative reward! This is the easiest way to make your rewards.",
     "Start of by how this penalty would look like on a graph, with the water level on the x-axis and the penalty on the y-axis. Try transforming this graph into a formula.",
     "The goal water level is 0.5, so if water level = 0.5; penalty = 0. You can write this as 'ideal water level' - 0.5 = 0, which is equal to the penalty at that point. This is your startpoint, base your formula around 'water_level - 0.5'",
-    "Starting with this 'water_level - 0.5', you want to make sure the penalty is positive on both sides. You can do this with for example taking the absolute value of it (abs()) or squaring it (**2)"
+    "Starting with this 'water_level - 0.5', you want to make sure the penalty is positive on both sides. You can do this with for example taking the absolute value of it (abs()) or squaring it (**2)",
+    "The target water level is actually only defined in the reward function",
+    "...this means that it's actually only defined in the penalty function which you wrote."
 ]}
