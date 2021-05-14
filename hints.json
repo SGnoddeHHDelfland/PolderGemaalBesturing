@@ -1,0 +1,3 @@
+{"hints":[
+    "We are trying to make the reward high when the water level is high, and lower when it gets further away from that. The water level should be 0.5. So for example, when the water level, the reward should be the highest, when the water level is 0, the reward should be low and the same for a water level of 1. In this example, we can turn this around: we use a penalty when the water level goes away from 0.5. So if the water level raises to 1, there should be a high penalty. If we substract the penalty, we have a negative reward. If the penalty is 0 (for the case of a water level of 0.5) the reward is 0, but this is a higher reward then a negative reward! This is the easiest way to make your rewards."
+]}
